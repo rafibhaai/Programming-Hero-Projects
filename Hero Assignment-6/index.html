@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awsome KIT -->
+    <script
+      src="https://kit.fontawesome.com/5bbee51655.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Daisy Khala CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>ReTro</title>
+  </head>
+
+  <body>
+    <header class="p-6">
+      <!-- Nav Section -->
+      <nav class="p-4">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <h1 class="text-4xl font-mulish font-black">Retro</h1>
+          </div>
+          <div class="navbar-end">
+            <i class="fa-solid fa-house pr-6"></i>
+            <i class="fa-solid fa-pencil pr-6"></i>
+            <i class="fa-solid fa-user-group pr-6"></i>
+            <i class="fa-regular fa-flag pr-6"></i>
+            <a
+              class="btn btn-active btn-accent rounded-[50px] text-white bg-[#797DFC]"
+              >Sign In</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Banner Section -->
+
+      <div class="bg-black rounded-3xl w-[75%] h-[535px] ml-48 mb-16">
+        <section
+          class="lg:min-h-screen bg-[url(B9A6-Retro-Forum-main/images/bgbanner.png)] bg-no-repeat bg-center"
+        >
+          <section
+            class="lg:min-h-screen flex flex-auto justify-center items-center pb-20"
+          >
+            <div class="flex justify-evenly gap-x-24">
+              <div class="max-w-[500px]">
+                <h1 class="text-6xl font-black font-mulish text-white">
+                  Welcome to the <span class="text-[#797DFC]">ReTro</span> Forum
+                </h1>
+                <br />
+                <p class="text-xl font-normal font-mulish text-white">
+                  Share your favorite opinion and win and wp forum coffee mug!
+                </p>
+                <br />
+                <div class="flex">
+                  <input
+                    id="search-field"
+                    type="text"
+                    class="rounded-[50px] h-2/4 w-2/4 p-4"
+                    placeholder="Search Here Anything"
+                  />
+                  <button
+                    onclick="handleSearch()"
+                    class="btn btn-active btn-accent rounded-[50px] text-white bg-[#797DFC]"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+              <div
+                class="rounded-3xl p-6 w-[300px] h-[200px] flex justify-evenly items-center bg-white text-black"
+              >
+                <div class="">
+                  <p class="text-xl font-normal font-mulish">
+                    Registered Users
+                  </p>
+                  <p class="text-xl font-normal font-mulish">Forum</p>
+                  <p class="text-xl font-normal font-mulish">Topics</p>
+                  <p class="text-xl font-normal font-mulish">Replies</p>
+                </div>
+                <div>
+                  <p class="text-xl font-medium font-mulish">01</p>
+                  <p class="text-xl font-medium font-mulish">05</p>
+                  <p class="text-xl font-medium font-mulish">01</p>
+                  <p class="text-xl font-medium font-mulish">01</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+      <img src="" alt="" />
+    </header>
+    <main class="p-6">
+      <div>
+        <h1 class="text-center text-4xl font-black font-mulish">
+          Lets Discuss
+        </h1>
+        <br />
+        <p class="text-center text-lg font-normal font-mulish">
+          Yes, you can run unit tests and view the results directly within the
+          app. <br />
+          &nbsp; The integrated testing features allow for a streamlined .
+        </p>
+      </div>
+
+      <!-- Card Section -->
+      <div id="loading-spinner" class="text-center hidden">
+        <!-- Spinner -->
+        <span class="loading loading-dots text-primary loading-lg"></span>
+      </div>
+
+      <div class="flex p-6 justify-center gap-20">
+        <div id="retro-card-container">
+          <!-- Dynamically Bosaichi Amra -->
+        </div>
+
+        <!-- Right DIv -->
+        <div class="w-[30%]">
+          <div
+            id="right-card-id"
+            class="pr-6 pl-6 p-4 mt-2 rounded-3xl bg-gray-200"
+          >
+            <div class="flex justify-between border">
+              <div class="font-bold text-xl font-mulish text-black">Title</div>
+              <div class="text-base font-mulish text-[#12132D] font-normal">
+                Mark as read <span id="selected-info">0</span>
+              </div>
+            </div>
+            <div class=""></div>
+          </div>
+        </div>
+      </div>
+
+      <!--Join Forum Section -->
+      <section>
+        <section class="">
+          <div
+            class="m-10 flex justify-evenly items-center bg-[#12132D] rounded-[32px] text-white"
+          >
+            <div>
+              <h1 class="text-4xl font-mulish font-black">Join Our Forum</h1>
+              <p class="text-lg font-mulish font-medium">
+                Share your favorite opinion and win and wp forum coffee mug!
+                Yes, you can <br />
+                run unit tests and view the results directly within the app.
+              </p>
+              <button
+                class="btn text-xl tetx-mulish font-medium mt-4 bg-[#797DFC] btn-xs sm:btn-sm md:btn-md lg:btn-lg rounded-[50px]"
+              >
+                Registered Now
+              </button>
+            </div>
+            <div class="p-4">
+              <img src="B9A6-Retro-Forum-main/images/joinforum.png" alt="" />
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Latest Post Section -->
+      <section>
+        <div>
+          <h1 class="text-center text-4xl font-black font-mulish">
+            Latest Posts
+          </h1>
+          <br />
+          <p class="text-center text-lg font-normal font-mulish">
+            Yes, you can run unit tests and view the <br />
+            &nbsp; results directly within the app. The integrated testing
+            features allow for a streamlined
+          </p>
+        </div>
+      </section>
+
+      <!-- Latest Post Card  -->
+      <section>
+        <div id="discuss-id" class="grid grid-cols-3 gap-6 m-6 p-6"></div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="mt-24">
+        <footer
+          class="h-[400px] footer footer-center p-10 bg-base-200 text-base-content rounded"
+        >
+          <div>
+            <h1 class="text-4xl font-mulish font-black">ReTro</h1>
+            <p class="text-base font-mulish font-normal">
+              Live Explore and Continue
+            </p>
+            <div class="flex gap-6 pt-6">
+              <i class="fa-brands fa-facebook fa-2xl"></i>
+              <i class="fa-brands fa-twitter fa-2xl"></i>
+              <i class="fa-brands fa-instagram fa-2xl"></i>
+              <i class="fa-brands fa-github fa-2xl"></i>
+            </div>
+          </div>
+
+          <aside>
+            <p>Copyright © 2024 - All right reserved by Rakhula LTD</p>
+          </aside>
+        </footer>
+      </section>
+    </footer>
+
+    <!-- Connection to JS -->
+    <script src="index.js"></script>
+  </body>
+</html>

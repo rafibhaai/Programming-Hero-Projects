@@ -1,0 +1,22 @@
+@media screen and (max-width: 600px) {
+    .head-section{
+        flex-direction: column;
+        margin-left: 110px   
+    }
+    .head-containt{
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .travel-section ,.first-bg{
+        flex-direction: column;
+        align-items: center;
+        font-size: small;
+        border-radius: 5px;
+        
+    }
+
+
+
+
+}
+
